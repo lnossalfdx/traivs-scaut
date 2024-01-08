@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Travis Scott - Venda de Ingressos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Show do Traivss Scott - Venda de Ingressos <br> Desgraça Eventos!</h1>
+    </header>
+
+    <section>
+        <h2>Informações do Show</h2>
+        <p>Data: 27 de Fevereiro de 2024</p>
+        <p>Local: Rua 428 (ao lado da havan) Morretes Itapema SC</p>
+        <p>Preço do Ingresso: R$ 15,00</p>
+    </section>
+
+    <section>
+        <h2>Compre Seu Ingresso</h2>
+        <form id="ticketForm">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="quantity">Quantidade de Ingressos:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <button type="button" onclick="purchaseTicket()">Comprar Ingresso</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Show do Travis Scott
+    </footer>
+
+    <script>
+        function purchaseTicket() {
+            // Aqui você pode adicionar lógica para processar a compra do ingresso
+            alert('Ingresso comprado com sucesso!');
+        }
+    </script>
+
+</body>
+</html>
